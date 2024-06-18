@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          id="new-todo"
+          placeholder="Adicione uma nova tarefa"
+        />
+        <button id="create-todo">Criar</button>
+      </div>
+      <div>
+        <h2>Tarefas criadas (<span id="created-count">0</span>)</h2>
+        <ul id="todo-list"></ul>
+      </div>
+      <div>
+        <h2>Concluídas (<span id="completed-count">0</span>)</h2>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
